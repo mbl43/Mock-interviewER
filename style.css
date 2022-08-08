@@ -16,6 +16,7 @@ button {
     padding-right: 2px;
     width: 99px; */
     margin: auto 1px;
+    color: rgb(29, 142, 255);
     padding: 10px 18px;
     text-align: center;
     font-size: larger;
@@ -42,6 +43,7 @@ button:first-child {
 
 button:last-of-type {
     border-top-right-radius: 50px;
+    border: none;
     border-bottom-right-radius: 50px;
 }
 
