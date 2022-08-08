@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/x-icon" href="/icon.jpg">
+  <link rel="stylesheet" href="style.css">
+  <title>Mock Interviewer</title>
+</head>
+
+<body>
+  <div id="container">
+    <!-- in this section show user face while recording and also see  recorded video  -->
+    <video id="gum" playsinline autoplay muted></video>
+    <video id="recorded" playsinline loop></video>
+    <div id="caption">
+      <h3>Camera</h3> <h3>Recorded Video</h3>
+    </div>
+    <textarea placeholder="Enter Your Notes" name="" id="" cols="112" rows="6"></textarea>
+    <div id="footer">
+      <!-- this is navagation section of website .user can control from this section -->
+      <button id="start">Start Camera</button>
+      <button id="record" disabled>Record</button>
+      <button id="play" disabled>Play</button>
+      <button id="download" disabled>Download</button>
+      <div>
+        <p>
+          <!-- cancel echo or background sound  -->
+          Echo:<input type="checkbox" id="echoCancellation" />
+        </p>
+      </div>
+
+    </div>
+    <div>
+      <span id="errorMsg"></span>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
