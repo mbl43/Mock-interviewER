@@ -11,10 +11,7 @@ body {
 
 /*  */
 button {
-    /* margin: 0 3px 10px 0;
-    padding-left: 2px;
-    padding-right: 2px;
-    width: 99px; */
+    
     margin: auto 1px;
     color: rgb(29, 142, 255);
     padding: 10px 18px;
@@ -22,6 +19,21 @@ button {
     font-size: larger;
     cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid grey;
+}
+/* styling button in navbar */
+button:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+button:last-of-type {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+button:nth-child(2):active {
+    background-color: red;
 }
 /* styleing video elment  */
 #container>video:nth-child(2) {
@@ -34,21 +46,6 @@ button {
     border: 2px solid red;
     border-radius: 25px;
     margin: 5px 15px;
-}
-/* styling button in navbar */
-button:first-child {
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 50px;
-}
-
-button:last-of-type {
-    border-top-right-radius: 50px;
-    border: none;
-    border-bottom-right-radius: 50px;
-}
-
-button:nth-child(2):active {
-    background-color: red;
 }
 
 
@@ -86,6 +83,7 @@ div > p{
 }
 textarea
 {
+    /* user can add notes using this  */
     border-radius: 25px;
     border: none;
     margin: 5px 15px;
