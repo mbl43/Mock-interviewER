@@ -99,7 +99,7 @@ async function init(constraints) {
     handleSuccess(stream);
   } catch (e) {
     console.error('navigator.getUserMedia error:', e);
-    errorMsgElement.innerHTML = `navigator.getUserMedia error:${e.toString()}`;
+    errorMsgElement.innerHTML = `Give Permission to Camera and Audio`;
   }
 }
 
