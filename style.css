@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: whitesmoke;
+    background-color: rgb(214, 214, 214);
+}
+
+/*  */
+button {
+    
+    margin: auto 1px;
+    color: rgb(29, 142, 255);
+    padding: 10px 18px;
+    text-align: center;
+    font-size: larger;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid grey;
+}
+/* styling button in navbar */
+button:first-child {
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+}
+
+button:last-of-type {
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+button:nth-child(2):active {
+    background-color: red;
+}
+/* styleing video elment  */
+#container>video:nth-child(2) {
+    border: 2px solid rgb(50, 108, 255);
+    border-radius: 25px;
+    margin: 5px 5px;
+    margin-left: 30px;
+}
+#container>video:first-child {
+    border: 2px solid red;
+    border-radius: 25px;
+    margin: 5px 15px;
+}
+
+
+p.borderBelow {
+    margin: 0 0 20px 0;
+    padding: 0 0 20px 0;
+}
+/* video elemnt */
+video {
+    vertical-align: top;
+    --width: 47vw;
+    width: var(--width);
+    height: calc(var(--width) * 0.5625);
+}
+
+video:last-of-type {
+    margin: 0 0 20px 0;
+}
+
+video#gumVideo {
+    margin: 0 20px 20px 0;
+}
+/* navigation bar */
+#footer {
+    bottom: 0;
+    position: fixed;
+    display: flex;
+    margin: auto;
+    width: 100%;
+    justify-content: center;
+    padding-bottom: 1.6rem;
+}
+div > p{
+    display: none;
+}
+textarea
+{
+    /* user can add notes using this  */
+    border-radius: 25px;
+    border: none;
+    margin: 5px 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    resize: none;
+    background-color:rgba(255, 255, 255, 0.7);
+}
+#caption
+{
+    display: flex;
+    justify-content: space-around;
+    font-family:  'Arial Narrow', Arial, sans-serif;
+
+}
+/* showing error message */
+div >span
+{
+    color: red;
+    font-size: 20px;
+    font-family: Verdana, Tahoma, sans-serif;
+}
