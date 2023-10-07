@@ -9,3 +9,14 @@
     display: flex;
     flex-direction: column;
 }
+button{
+    
+    margin: auto 1px;
+    color: rgb(29, 142, 255);
+    padding: 5px 8px;
+    text-align: center;
+    font-size: small;
+    cursor: pointer;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    border: 2px solid grey;
+}
