@@ -11,7 +11,6 @@ const recordButton = document.querySelector('button#record');
 const playButton = document.querySelector('button#play');
 const downloadButton = document.querySelector('button#download');
 
-
 recordButton.addEventListener('click', () => {
   if (recordButton.textContent === 'Record') {
     startRecording();
